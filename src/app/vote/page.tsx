@@ -78,8 +78,7 @@ const candidates: Candidate[] = [
     viceChairman: {
       name: "Dian Kusuma",
       image:
-
-"https://lh3.googleusercontent.com/aida-public/AB6AXuCbqV9vjTP24c-Au4wte0NSfRMUV_iLm4Yf_cnKijseOqHzeiCOeLaA446QfZztI_EpL_OJ9zYpkNL2KvjtfECeKmtCiC4S6AAqyeVlcuHf_SAoO8GPDXMbn_4xN3RXF4gOOGqiLQIbU2Mi02ihlbFBrmaOh4YztVvfzyNQDoq8dkZoTQ4DsntfoCTC-CPvELHlH9nvonDjwfO4R8dZrjpT1iM0CcEPpal2ZBly1FN-yF2t7igLAgo0t85AEOridcQnYBceMh2uSHI",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuCbqV9vjTP24c-Au4wte0NSfRMUV_iLm4Yf_cnKijseOqHzeiCOeLaA446QfZztI_EpL_OJ9zYpkNL2KvjtfECeKmtCiC4S6AAqyeVlcuHf_SAoO8GPDXMbn_4xN3RXF4gOOGqiLQIbU2Mi02ihlbFBrmaOh4YztVvfzyNQDoq8dkZoTQ4DsntfoCTC-CPvELHlH9nvonDjwfO4R8dZrjpT1iM0CcEPpal2ZBly1FN-yF2t7igLAgo0t85AEOridcQnYBceMh2uSHI",
     },
     vision:
       "Menjadikan OSIS sebagai mitra strategis sekolah dalam mencetak lulusan berkarakter dan siap kerja.",
@@ -107,14 +106,14 @@ const candidates: Candidate[] = [
       "Membuat inkubator bisnis retail",
     ],
   },
-  ];
+];
  
 export default function VotePage() {
   const router = useRouter();
  
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isConfirmOpen, setIsConfirmOpen] = useState(false);
-   const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(
+  const [selectedCandidate, setSelectedCandidate] = useState<Candidate | null>(
     null,
   );
  
@@ -136,7 +135,8 @@ export default function VotePage() {
     // TODO: Server Action untuk insert data ke Supabase
     router.push("/success");
   };
- return (
+ 
+  return (
     <div className="bg-slate-50 text-slate-900 antialiased min-h-screen relative flex flex-col">
       {/* Top App Bar */}
       <header className="fixed top-0 w-full bg-white/70 backdrop-blur-lg border-b border-white/40 z-40 shadow-sm">
